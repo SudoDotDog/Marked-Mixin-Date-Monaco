@@ -1,0 +1,43 @@
+{
+  "name": "@sudoo/marked-mixin-date-monaco",
+  "version": "1.2.0",
+  "description": "Monaco Support for Marked Date Mixin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudoDotDog/Sudoo-Marked-Mixin-Date-Monaco.git"
+  },
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SudoDotDog/Sudoo-Marked-Mixin-Date-Monaco/issues"
+  },
+  "homepage": "https://github.com/SudoDotDog/Sudoo-Marked-Mixin-Date-Monaco#readme",
+  "dependencies": {
+    "@sudoo/marked-monaco-mixin": "^1.2.0"
+  },
+  "peerDependencies": {
+    "@sudoo/marked": "*",
+    "@sudoo/marked-monaco": "*"
+  },
+  "devDependencies": {
+    "@sudoo/marked": "^3.10.0",
+    "@sudoo/marked-monaco": "^1.4.0",
+    "@sudoo/triforce": "^3.8.0",
+    "monaco-editor": "^0.34.0"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "sourceMap": true
+  }
+}
