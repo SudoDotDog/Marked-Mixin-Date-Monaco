@@ -4,11 +4,15 @@
  * @description Factory
  */
 
-import { MarkedMonacoExportsMixinFactory } from "@sudoo/marked-monaco-mixin";
-import { MarkedDateMixinDeclaration } from "./declaration";
+import { MarkedMonacoClassMixinFactory } from "@sudoo/marked-monaco-mixin";
+import { MarkedDateMixinConDeclaration, MarkedDateMixinInstanceDeclaration, MarkedDateMixinStaticDeclaration } from "./declaration";
 
 export const markedDateMonacoMixinFactory =
-    MarkedMonacoExportsMixinFactory.fromExports(
+    MarkedMonacoClassMixinFactory.fromElements(
         "marked-mixin-date",
-        MarkedDateMixinDeclaration,
+        {
+            constructor: MarkedDateMixinConDeclaration,
+            staticElements: MarkedDateMixinStaticDeclaration,
+            instanceElements: MarkedDateMixinInstanceDeclaration,
+        },
     );

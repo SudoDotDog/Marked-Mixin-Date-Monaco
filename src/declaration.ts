@@ -4,5 +4,12 @@
  * @description Declaration
  */
 
-export const MarkedDateMixinDeclaration: Record<string, string> = {
+export const MarkedDateMixinConDeclaration: string[] = [
+    `(key: string): string`,
+];
+
+export const MarkedDateMixinStaticDeclaration: Record<string, string> = {
+};
+
+export const MarkedDateMixinInstanceDeclaration: Record<string, string> = {
 };
