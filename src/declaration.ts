@@ -4,9 +4,9 @@
  * @description Declaration
  */
 
-export const MarkedDateMixinConDeclaration: string[] = [
+export const MarkedDateMixinConstructorDeclaration: string[] = [
 
-    `(key: string): string`,
+    `(key?: string): string`,
 ];
 
 export const MarkedDateMixinStaticDeclaration: Record<string, string> = {
